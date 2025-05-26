@@ -294,7 +294,7 @@ python app.py
 
 ## Presentation
 
-- [Watch Here](hsn_agent_presentation.html)
+- [Watch Here](hsn_agent_presentation.html) Run this file locally to watch the presentation in browser
 
 ## 🙏 Acknowledgments
 
