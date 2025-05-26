@@ -2,6 +2,13 @@
 
 An intelligent conversational agent for validating Harmonized System Nomenclature (HSN) codes with real-time validation, hierarchical analysis, and natural language processing capabilities.
 
+## Sample Outputs
+![Screenshot 2025-05-26 170340](https://github.com/user-attachments/assets/1ce10e84-ce17-4d04-a541-e95dba9851ae)
+![Screenshot 2025-05-26 170401](https://github.com/user-attachments/assets/023c20e2-2003-4e11-b437-39457ba6f9c6)
+![Screenshot 2025-05-26 170428](https://github.com/user-attachments/assets/0a6f8ecf-2746-44dc-980e-5e0c78f01142)
+![Screenshot 2025-05-26 170513](https://github.com/user-attachments/assets/704f1166-62ec-4390-98e3-7fa9f48e7dad)
+
+
 ## 🚀 Features
 
 - **Real-time HSN Code Validation** - Instant validation against master dataset
