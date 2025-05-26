@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HSN Code Chatbot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="layout">
+    <!-- Sidebar for invalids -->
+    <div class="sidebar">
+        <h4>⚠️ Invalid Attempts</h4>
+        <ul id="invalidList"></ul>
+        <a class="upload-link" href="/upload">📎 Upload Excel</a>
+    </div>
+
+    <!-- Main Chat UI -->
+    <div class="chat-container">
+        <div class="chat-header">
+            HSN Code Chatbot
+        </div>
+        <div class="chat-box" id="chatBox"></div>
+        <div class="chat-footer">
+            <input type="text" id="userInput" placeholder="Ask about an HSN code..." autocomplete="off">
+            <button onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='chat.js') }}"></script>
+<script>
+    // Load invalid summary via JSON
+    fetch("/admin/invalids_json")
+        .then(res => res.json())
+        .then(data => {
+            const list = document.getElementById("invalidList");
+            if (data.length === 0) {
+                list.innerHTML = "<li>No invalids yet</li>";
+            } else {
+                data.forEach(([desc, count]) => {
+                    const li = document.createElement("li");
+                    li.textContent = `${desc} — ${count}`;
+                    list.appendChild(li);
+                });
+            }
+        });
+</script>
+</body>
+</html>

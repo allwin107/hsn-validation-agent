@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload HSN Excel File</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .upload-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        form {
+            margin-bottom: 15px;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 0 auto 20px auto;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .message {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .link-back {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 13px;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+
+        .link-back:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="upload-container">
+    <h2>Upload New HSN Excel</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".xlsx" required>
+        <button type="submit">Upload & Reload</button>
+    </form>
+    {% if message %}
+        <div class="message">{{ message }}</div>
+    {% endif %}
+    <a class="link-back" href="/">← Back to Chatbot</a>
+</div>
+</body>
+</html>
