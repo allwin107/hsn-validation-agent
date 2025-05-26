@@ -307,7 +307,7 @@ python app.py
 
 - **Issues**: [GitHub Issues](https://github.com/allwin107/hsn-validation-agent/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/allwin107/hsn-validation-agent/discussions)
-- **Email**: allwin10raja.com
+- **Email**: allwin10raja@gmail.com
 
 ## 🚀 Roadmap
 
