@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv/
+.env
+.venv/
+.Python
+*.sqlite3
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# VSCode
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Excel files (track with Git LFS instead if needed)
+*.xlsx
+
+# Node/npm
+node_modules/
+dist/
+build/
+*.lock
+
+# Flask
+instance/
+*.db
+*.sqlite3
+
+# Docker
+*.pid
+data/
+
+# Ignore HTML build artifacts
+*.html
