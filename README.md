@@ -43,8 +43,8 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-# Place your HSN dataset
-# Copy your HSN_SAC.xlsx file from [here](https://docs.google.com/spreadsheets/d/1UD4JAAQ6Fgeyc5a1OwBiLV2cPTAK_D2q/edit?usp=sharing&ouid=116706160084886050181&rtpof=true&sd=true) to the project root.
+### Place your HSN dataset under a data folder [data/HSN_SAC.xlsx]
+#### Copy your HSN_SAC.xlsx file from [here](https://docs.google.com/spreadsheets/d/1UD4JAAQ6Fgeyc5a1OwBiLV2cPTAK_D2q/edit?usp=sharing&ouid=116706160084886050181&rtpof=true&sd=true) to the project root.
 
 # Run the application
 ```bash
